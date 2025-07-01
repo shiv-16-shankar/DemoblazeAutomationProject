@@ -1,0 +1,1128 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Demoblaze_Automation_Suite" class="navigator-link">
+              <span class="suite-name border-failed">Demoblaze Automation Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Demoblaze_Automation_Suite" class="navigator-link ">
+                    <span>C:\Users\Sathya\eclipse-workspace\DemoblazeAutomationProject\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Demoblaze_Automation_Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Demoblaze_Automation_Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Demoblaze_Automation_Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Demoblaze_Automation_Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Demoblaze_Automation_Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Demoblaze_Automation_Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">25 methods, 2 failed,   23 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Demoblaze_Automation_Suite" class="hide-methods failed suite-Demoblaze_Automation_Suite"> (hide)</a> <!-- hide-methods failed suite-Demoblaze_Automation_Suite -->
+                      <a href="#" panel-name="suite-Demoblaze_Automation_Suite" class="show-methods failed suite-Demoblaze_Automation_Suite"> (show)</a> <!-- show-methods failed suite-Demoblaze_Automation_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Demoblaze_Automation_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Demoblaze_Automation_Suite" title="tests.OrderTest" class="method navigator-link" hash-for-method="placeOrderWithEmptyForm">placeOrderWithEmptyForm</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Demoblaze_Automation_Suite" title="tests.CartTest" class="method navigator-link" hash-for-method="removeProductFromCart">removeProductFromCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Demoblaze_Automation_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Demoblaze_Automation_Suite" class="hide-methods passed suite-Demoblaze_Automation_Suite"> (hide)</a> <!-- hide-methods passed suite-Demoblaze_Automation_Suite -->
+                      <a href="#" panel-name="suite-Demoblaze_Automation_Suite" class="show-methods passed suite-Demoblaze_Automation_Suite"> (show)</a> <!-- show-methods passed suite-Demoblaze_Automation_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Demoblaze_Automation_Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Demoblaze_Automation_Suite" title="tests.CartTest" class="method navigator-link" hash-for-method="addMultipleProductsToCart">addMultipleProductsToCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Demoblaze_Automation_Suite" title="tests.CartTest" class="method navigator-link" hash-for-method="addProductToCart">addProductToCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Demoblaze_Automation_Suite" title="tests.ProductBrowsingTest" class="method navigator-link" hash-for-method="browsePhonesCategory">browsePhonesCategory</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Demoblaze_Automation_Suite" title="tests.UIUXTest" class="method navigator-link" hash-for-method="checkFontConsistency">checkFontConsistency</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Demoblaze_Automation_Suite" title="tests.UIUXTest" class="method navigator-link" hash-for-method="checkVisibilityOfActionButtons">checkVisibilityOfActionButtons</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Demoblaze_Automation_Suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="loginWithEmptyFields">loginWithEmptyFields</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Demoblaze_Automation_Suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="loginWithInvalidEmailFormat">loginWithInvalidEmailFormat</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Demoblaze_Automation_Suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="loginWithValidCredentials">loginWithValidCredentials</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Demoblaze_Automation_Suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="loginWithWrongPassword">loginWithWrongPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Demoblaze_Automation_Suite" title="tests.ProductBrowsingTest" class="method navigator-link" hash-for-method="navigateToHomeFromNavbar">navigateToHomeFromNavbar</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Demoblaze_Automation_Suite" title="tests.ProductBrowsingTest" class="method navigator-link" hash-for-method="navigateUsingNavbarLinks">navigateUsingNavbarLinks</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Demoblaze_Automation_Suite" title="tests.OrderTest" class="method navigator-link" hash-for-method="placeOrderWithValidDetails">placeOrderWithValidDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Demoblaze_Automation_Suite" title="tests.SignupTest" class="method navigator-link" hash-for-method="signUpWithEmptyFields">signUpWithEmptyFields</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Demoblaze_Automation_Suite" title="tests.SignupTest" class="method navigator-link" hash-for-method="signUpWithExistingUsername">signUpWithExistingUsername</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Demoblaze_Automation_Suite" title="tests.SignupTest" class="method navigator-link" hash-for-method="signUpWithUniqueCredentials">signUpWithUniqueCredentials</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Demoblaze_Automation_Suite" title="tests.UIUXTest" class="method navigator-link" hash-for-method="testAlertPopupStyling">testAlertPopupStyling</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Demoblaze_Automation_Suite" title="tests.LogoutTest" class="method navigator-link" hash-for-method="verifyLogoutAfterLogin">verifyLogoutAfterLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Demoblaze_Automation_Suite" title="tests.ResponsiveDesignTest" class="method navigator-link" hash-for-method="verifyNoHorizontalScroll">verifyNoHorizontalScroll</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Demoblaze_Automation_Suite" title="tests.OrderTest" class="method navigator-link" hash-for-method="verifyOrderConfirmationPopup">verifyOrderConfirmationPopup</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Demoblaze_Automation_Suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="verifyPasswordIsMasked">verifyPasswordIsMasked</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Demoblaze_Automation_Suite" title="tests.UIUXTest" class="method navigator-link" hash-for-method="verifyProductTileAlignment">verifyProductTileAlignment</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Demoblaze_Automation_Suite" title="tests.CartTest" class="method navigator-link" hash-for-method="viewCartWithAddedProducts">viewCartWithAddedProducts</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Demoblaze_Automation_Suite" title="tests.ProductBrowsingTest" class="method navigator-link" hash-for-method="viewProductDetails">viewProductDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Demoblaze_Automation_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Demoblaze_Automation_Suite" class="panel Demoblaze_Automation_Suite">
+          <div class="suite-Demoblaze_Automation_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.CartTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="removeProductFromCart">
+                  </a> <!-- removeProductFromCart -->
+                  <span class="method-name">removeProductFromCart</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [false] but found [true]
+	at tests.CartTest.removeProductFromCart(CartTest.java:56)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Demoblaze_Automation_Suite-class-failed -->
+          <div class="suite-Demoblaze_Automation_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.OrderTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="placeOrderWithEmptyForm">
+                  </a> <!-- placeOrderWithEmptyForm -->
+                  <span class="method-name">placeOrderWithEmptyForm</span>
+                  <div class="stack-trace">org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Please fill out Name and Creditcard.}
+  (Session info: chrome=136.0.7103.93): Please fill out Name and Creditcard.
+Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [04505c5f56430680ee7ec31e7eb505a4, findElements {value=orderModalLabel, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.93, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: C:\Users\Sathya\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55004}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55004/devtoo..., se:cdpVersion: 136.0.7103.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 04505c5f56430680ee7ec31e7eb505a4
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:136)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElements(ElementLocation.java:182)
+	at org.openqa.selenium.remote.ElementLocation.findElements(ElementLocation.java:103)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:362)
+	at tests.OrderTest.placeOrderWithEmptyForm(OrderTest.java:90)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Demoblaze_Automation_Suite-class-failed -->
+          <div class="suite-Demoblaze_Automation_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginWithEmptyFields">
+                  </a> <!-- loginWithEmptyFields -->
+                  <span class="method-name">loginWithEmptyFields</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginWithInvalidEmailFormat">
+                  </a> <!-- loginWithInvalidEmailFormat -->
+                  <span class="method-name">loginWithInvalidEmailFormat</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginWithValidCredentials">
+                  </a> <!-- loginWithValidCredentials -->
+                  <span class="method-name">loginWithValidCredentials</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginWithWrongPassword">
+                  </a> <!-- loginWithWrongPassword -->
+                  <span class="method-name">loginWithWrongPassword</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyPasswordIsMasked">
+                  </a> <!-- verifyPasswordIsMasked -->
+                  <span class="method-name">verifyPasswordIsMasked</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Demoblaze_Automation_Suite-class-passed -->
+          <div class="suite-Demoblaze_Automation_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.UIUXTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkFontConsistency">
+                  </a> <!-- checkFontConsistency -->
+                  <span class="method-name">checkFontConsistency</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkVisibilityOfActionButtons">
+                  </a> <!-- checkVisibilityOfActionButtons -->
+                  <span class="method-name">checkVisibilityOfActionButtons</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAlertPopupStyling">
+                  </a> <!-- testAlertPopupStyling -->
+                  <span class="method-name">testAlertPopupStyling</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyProductTileAlignment">
+                  </a> <!-- verifyProductTileAlignment -->
+                  <span class="method-name">verifyProductTileAlignment</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Demoblaze_Automation_Suite-class-passed -->
+          <div class="suite-Demoblaze_Automation_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.SignupTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="signUpWithEmptyFields">
+                  </a> <!-- signUpWithEmptyFields -->
+                  <span class="method-name">signUpWithEmptyFields</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="signUpWithExistingUsername">
+                  </a> <!-- signUpWithExistingUsername -->
+                  <span class="method-name">signUpWithExistingUsername</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="signUpWithUniqueCredentials">
+                  </a> <!-- signUpWithUniqueCredentials -->
+                  <span class="method-name">signUpWithUniqueCredentials</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Demoblaze_Automation_Suite-class-passed -->
+          <div class="suite-Demoblaze_Automation_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.ProductBrowsingTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="browsePhonesCategory">
+                  </a> <!-- browsePhonesCategory -->
+                  <span class="method-name">browsePhonesCategory</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="navigateToHomeFromNavbar">
+                  </a> <!-- navigateToHomeFromNavbar -->
+                  <span class="method-name">navigateToHomeFromNavbar</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="navigateUsingNavbarLinks">
+                  </a> <!-- navigateUsingNavbarLinks -->
+                  <span class="method-name">navigateUsingNavbarLinks</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="viewProductDetails">
+                  </a> <!-- viewProductDetails -->
+                  <span class="method-name">viewProductDetails</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Demoblaze_Automation_Suite-class-passed -->
+          <div class="suite-Demoblaze_Automation_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.CartTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addMultipleProductsToCart">
+                  </a> <!-- addMultipleProductsToCart -->
+                  <span class="method-name">addMultipleProductsToCart</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addProductToCart">
+                  </a> <!-- addProductToCart -->
+                  <span class="method-name">addProductToCart</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="viewCartWithAddedProducts">
+                  </a> <!-- viewCartWithAddedProducts -->
+                  <span class="method-name">viewCartWithAddedProducts</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Demoblaze_Automation_Suite-class-passed -->
+          <div class="suite-Demoblaze_Automation_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.LogoutTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLogoutAfterLogin">
+                  </a> <!-- verifyLogoutAfterLogin -->
+                  <span class="method-name">verifyLogoutAfterLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Demoblaze_Automation_Suite-class-passed -->
+          <div class="suite-Demoblaze_Automation_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.OrderTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="placeOrderWithValidDetails">
+                  </a> <!-- placeOrderWithValidDetails -->
+                  <span class="method-name">placeOrderWithValidDetails</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyOrderConfirmationPopup">
+                  </a> <!-- verifyOrderConfirmationPopup -->
+                  <span class="method-name">verifyOrderConfirmationPopup</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Demoblaze_Automation_Suite-class-passed -->
+          <div class="suite-Demoblaze_Automation_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.ResponsiveDesignTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyNoHorizontalScroll">
+                  </a> <!-- verifyNoHorizontalScroll -->
+                  <span class="method-name">verifyNoHorizontalScroll</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Demoblaze_Automation_Suite-class-passed -->
+        </div> <!-- panel Demoblaze_Automation_Suite -->
+        <div panel-name="test-xml-Demoblaze_Automation_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\Sathya\eclipse-workspace\DemoblazeAutomationProject\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Demoblaze Automation Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Demoblaze Tests&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.LoginTest&quot;/&gt;
+      &lt;class name=&quot;tests.SignupTest&quot;/&gt;
+      &lt;class name=&quot;tests.CartTest&quot;/&gt;
+      &lt;class name=&quot;tests.OrderTest&quot;/&gt;
+      &lt;class name=&quot;tests.ProductBrowsingTest&quot;/&gt;
+      &lt;class name=&quot;tests.LogoutTest&quot;/&gt;
+      &lt;class name=&quot;tests.UIUXTest&quot;/&gt;
+      &lt;class name=&quot;tests.ResponsiveDesignTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Demoblaze Tests --&gt;
+&lt;/suite&gt; &lt;!-- Demoblaze Automation Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Demoblaze_Automation_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Demoblaze Automation Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Demoblaze Tests (8 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Demoblaze_Automation_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Demoblaze Automation Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Demoblaze_Automation_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Demoblaze Automation Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Demoblaze_Automation_Suite');
+function tableData_Demoblaze_Automation_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(25);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'verifyOrderConfirmationPopup')
+data.setCell(0, 2, 'tests.OrderTest')
+data.setCell(0, 3, 25913);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'addMultipleProductsToCart')
+data.setCell(1, 2, 'tests.CartTest')
+data.setCell(1, 3, 25666);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'placeOrderWithEmptyForm')
+data.setCell(2, 2, 'tests.OrderTest')
+data.setCell(2, 3, 25459);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'placeOrderWithValidDetails')
+data.setCell(3, 2, 'tests.OrderTest')
+data.setCell(3, 3, 24699);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'addProductToCart')
+data.setCell(4, 2, 'tests.CartTest')
+data.setCell(4, 3, 14215);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'navigateUsingNavbarLinks')
+data.setCell(5, 2, 'tests.ProductBrowsingTest')
+data.setCell(5, 3, 13917);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'verifyLogoutAfterLogin')
+data.setCell(6, 2, 'tests.LogoutTest')
+data.setCell(6, 3, 12207);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'navigateToHomeFromNavbar')
+data.setCell(7, 2, 'tests.ProductBrowsingTest')
+data.setCell(7, 3, 9709);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'loginWithValidCredentials')
+data.setCell(8, 2, 'tests.LoginTest')
+data.setCell(8, 3, 9529);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'loginWithWrongPassword')
+data.setCell(9, 2, 'tests.LoginTest')
+data.setCell(9, 3, 9238);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'testAlertPopupStyling')
+data.setCell(10, 2, 'tests.UIUXTest')
+data.setCell(10, 3, 8946);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'loginWithEmptyFields')
+data.setCell(11, 2, 'tests.LoginTest')
+data.setCell(11, 3, 8545);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'loginWithInvalidEmailFormat')
+data.setCell(12, 2, 'tests.LoginTest')
+data.setCell(12, 3, 8342);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'signUpWithUniqueCredentials')
+data.setCell(13, 2, 'tests.SignupTest')
+data.setCell(13, 3, 8071);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'signUpWithExistingUsername')
+data.setCell(14, 2, 'tests.SignupTest')
+data.setCell(14, 3, 8070);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'signUpWithEmptyFields')
+data.setCell(15, 2, 'tests.SignupTest')
+data.setCell(15, 3, 7752);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'removeProductFromCart')
+data.setCell(16, 2, 'tests.CartTest')
+data.setCell(16, 3, 6811);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'viewProductDetails')
+data.setCell(17, 2, 'tests.ProductBrowsingTest')
+data.setCell(17, 3, 6588);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'verifyNoHorizontalScroll')
+data.setCell(18, 2, 'tests.ResponsiveDesignTest')
+data.setCell(18, 3, 6003);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'browsePhonesCategory')
+data.setCell(19, 2, 'tests.ProductBrowsingTest')
+data.setCell(19, 3, 5935);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'verifyPasswordIsMasked')
+data.setCell(20, 2, 'tests.LoginTest')
+data.setCell(20, 3, 5850);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'checkFontConsistency')
+data.setCell(21, 2, 'tests.UIUXTest')
+data.setCell(21, 3, 3842);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'checkVisibilityOfActionButtons')
+data.setCell(22, 2, 'tests.UIUXTest')
+data.setCell(22, 3, 3803);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'verifyProductTileAlignment')
+data.setCell(23, 2, 'tests.UIUXTest')
+data.setCell(23, 3, 3628);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'viewCartWithAddedProducts')
+data.setCell(24, 2, 'tests.CartTest')
+data.setCell(24, 3, 3580);
+window.suiteTableData['Demoblaze_Automation_Suite']= { tableData: data, tableDiv: 'times-div-Demoblaze_Automation_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 4 minutes</span>
+              <div id="times-div-Demoblaze_Automation_Suite">
+              </div> <!-- times-div-Demoblaze_Automation_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Demoblaze_Automation_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Demoblaze Automation Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Demoblaze_Automation_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">14 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.SignupTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setupReport</span>
+                <br/>
+                <span class="ignored-method-name">flushReport</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.UIUXTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setupReport</span>
+                <br/>
+                <span class="ignored-method-name">flushReport</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.ProductBrowsingTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setupReport</span>
+                <br/>
+                <span class="ignored-method-name">flushReport</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.CartTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setupReport</span>
+                <br/>
+                <span class="ignored-method-name">flushReport</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.LogoutTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">flushReport</span>
+                <br/>
+                <span class="ignored-method-name">setupReport</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.OrderTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">flushReport</span>
+                <br/>
+                <span class="ignored-method-name">setupReport</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.ResponsiveDesignTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">flushReport</span>
+                <br/>
+                <span class="ignored-method-name">setupReport</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Demoblaze_Automation_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">setupReport</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">725 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">loginWithValidCredentials</span>
+                <span class="method-start">5440 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=loginWithValidCredentials status=SUCCESS method=LoginTest.loginWithValidCredentials...)</span>
+                <span class="method-start">14969 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">15375 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">loginWithWrongPassword</span>
+                <span class="method-start">17450 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=loginWithWrongPassword status=SUCCESS method=LoginTest.loginWithWrongPassword()[pri...)</span>
+                <span class="method-start">26688 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">27074 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">loginWithEmptyFields</span>
+                <span class="method-start">29121 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=loginWithEmptyFields status=SUCCESS method=LoginTest.loginWithEmptyFields()[pri:3, ...)</span>
+                <span class="method-start">37666 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">38214 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">loginWithInvalidEmailFormat</span>
+                <span class="method-start">40237 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=loginWithInvalidEmailFormat status=SUCCESS method=LoginTest.loginWithInvalidEmailFo...)</span>
+                <span class="method-start">48586 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">48948 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyPasswordIsMasked</span>
+                <span class="method-start">50887 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=verifyPasswordIsMasked status=SUCCESS method=LoginTest.verifyPasswordIsMasked()[pri...)</span>
+                <span class="method-start">56737 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.SignupTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">57109 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">signUpWithUniqueCredentials</span>
+                <span class="method-start">58934 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=signUpWithUniqueCredentials status=SUCCESS method=SignupTest.signUpWithUniqueCreden...)</span>
+                <span class="method-start">67008 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">67381 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">signUpWithExistingUsername</span>
+                <span class="method-start">69231 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=signUpWithExistingUsername status=SUCCESS method=SignupTest.signUpWithExistingUsern...)</span>
+                <span class="method-start">77312 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">77672 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">signUpWithEmptyFields</span>
+                <span class="method-start">79623 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=signUpWithEmptyFields status=SUCCESS method=SignupTest.signUpWithEmptyFields()[pri:...)</span>
+                <span class="method-start">87386 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.CartTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">87796 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">addProductToCart</span>
+                <span class="method-start">89890 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=addProductToCart status=SUCCESS method=CartTest.addProductToCart()[pri:1, instance:...)</span>
+                <span class="method-start">104109 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">104496 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">viewCartWithAddedProducts</span>
+                <span class="method-start">106400 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=viewCartWithAddedProducts status=SUCCESS method=CartTest.viewCartWithAddedProducts(...)</span>
+                <span class="method-start">109984 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">110316 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">removeProductFromCart</span>
+                <span class="method-start">112102 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=removeProductFromCart status=FAILURE method=CartTest.removeProductFromCart()[pri:3,...)</span>
+                <span class="method-start">118925 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">119569 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">addMultipleProductsToCart</span>
+                <span class="method-start">121375 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=addMultipleProductsToCart status=SUCCESS method=CartTest.addMultipleProductsToCart(...)</span>
+                <span class="method-start">147041 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.OrderTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">147431 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">placeOrderWithValidDetails</span>
+                <span class="method-start">149271 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=placeOrderWithValidDetails status=SUCCESS method=OrderTest.placeOrderWithValidDetai...)</span>
+                <span class="method-start">173970 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">174346 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">placeOrderWithEmptyForm</span>
+                <span class="method-start">176072 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=placeOrderWithEmptyForm status=FAILURE method=OrderTest.placeOrderWithEmptyForm()[p...)</span>
+                <span class="method-start">201545 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">202193 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyOrderConfirmationPopup</span>
+                <span class="method-start">204214 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=verifyOrderConfirmationPopup status=SUCCESS method=OrderTest.verifyOrderConfirmatio...)</span>
+                <span class="method-start">230127 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.ProductBrowsingTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">230502 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">browsePhonesCategory</span>
+                <span class="method-start">232432 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=browsePhonesCategory status=SUCCESS method=ProductBrowsingTest.browsePhonesCategory...)</span>
+                <span class="method-start">238367 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">238773 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">viewProductDetails</span>
+                <span class="method-start">240520 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=viewProductDetails status=SUCCESS method=ProductBrowsingTest.viewProductDetails()[p...)</span>
+                <span class="method-start">247108 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">247639 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">navigateToHomeFromNavbar</span>
+                <span class="method-start">249421 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=navigateToHomeFromNavbar status=SUCCESS method=ProductBrowsingTest.navigateToHomeFr...)</span>
+                <span class="method-start">259132 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">259528 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">navigateUsingNavbarLinks</span>
+                <span class="method-start">261240 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=navigateUsingNavbarLinks status=SUCCESS method=ProductBrowsingTest.navigateUsingNav...)</span>
+                <span class="method-start">275157 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.LogoutTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">275579 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyLogoutAfterLogin</span>
+                <span class="method-start">277293 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=verifyLogoutAfterLogin status=SUCCESS method=LogoutTest.verifyLogoutAfterLogin()[pr...)</span>
+                <span class="method-start">289500 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.UIUXTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">290067 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyProductTileAlignment</span>
+                <span class="method-start">291928 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=verifyProductTileAlignment status=SUCCESS method=UIUXTest.verifyProductTileAlignmen...)</span>
+                <span class="method-start">295556 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">295848 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">checkVisibilityOfActionButtons</span>
+                <span class="method-start">297617 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=checkVisibilityOfActionButtons status=SUCCESS method=UIUXTest.checkVisibilityOfActi...)</span>
+                <span class="method-start">301420 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">301745 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">checkFontConsistency</span>
+                <span class="method-start">303433 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=checkFontConsistency status=SUCCESS method=UIUXTest.checkFontConsistency()[pri:3, i...)</span>
+                <span class="method-start">307276 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">307616 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testAlertPopupStyling</span>
+                <span class="method-start">309374 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testAlertPopupStyling status=SUCCESS method=UIUXTest.testAlertPopupStyling()[pri:4,...)</span>
+                <span class="method-start">318325 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.ResponsiveDesignTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">318699 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyNoHorizontalScroll</span>
+                <span class="method-start">320570 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=verifyNoHorizontalScroll status=SUCCESS method=ResponsiveDesignTest.verifyNoHorizon...)</span>
+                <span class="method-start">326574 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite after">
+                <span class="method-name">flushReport</span>
+                <span class="method-start">326979 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
