@@ -8,6 +8,7 @@
           <include name="setup"/>
           <include name="tearDown"/>
           <include name="setupReport"/>
+          <include name="viewCartWithAddedProducts"/>
           <include name="removeProductFromCart"/>
           <include name="flushReport"/>
         </methods>

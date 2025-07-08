@@ -15,16 +15,16 @@ public class CartTest extends BaseTest {
 
         // Login first
         driver.findElement(By.id("login2")).click();
-        Thread.sleep(2000);
+        Thread.sleep(3000);
         driver.findElement(By.id("loginusername")).sendKeys("Kumar6868");
         driver.findElement(By.id("loginpassword")).sendKeys("Password@123");
         driver.findElement(By.xpath("//button[text()='Log in']")).click();
         Thread.sleep(3000);
 
-        driver.findElement(By.linkText("Samsung galaxy s6")).click();
-        Thread.sleep(2000);
+        driver.findElement(By.xpath("//a[contains(text(),'Samsung')]")).click();
+        Thread.sleep(3000);
         driver.findElement(By.linkText("Add to cart")).click();
-        Thread.sleep(2000);
+        Thread.sleep(3000);
 
         String alertText = driver.switchTo().alert().getText();
         Assert.assertTrue(alertText.contains("Product added"));
@@ -34,14 +34,18 @@ public class CartTest extends BaseTest {
 
     @Test(priority = 2)
     public void viewCartWithAddedProducts() throws InterruptedException {
-        test = extent.createTest("View Cart With Added Products");
-        driver.get("https://www.demoblaze.com/cart.html");
+    	driver.findElement(By.xpath("//a[text()='Samsung galaxy s6']")).click();
+        driver.findElement(By.xpath("//a[text()='Add to cart']")).click();
+        Thread.sleep(2000); // wait for alert
+        driver.switchTo().alert().accept();
+        Thread.sleep(2000);
+        driver.findElement(By.id("cartur")).click();
         Thread.sleep(2000);
 
-        boolean productVisible = driver.findElements(By.xpath("//td[text()='Samsung galaxy s6']")).size() > 0;
-        Assert.assertTrue(productVisible);
-        test.pass("Cart displays the added product.");
+        boolean isProductVisible = driver.findElement(By.xpath("//td[contains(text(),'Samsung')]")).isDisplayed();
+        Assert.assertTrue(isProductVisible, "Product not visible in cart");
     }
+
 
     @Test(priority = 3)
     public void removeProductFromCart() throws InterruptedException {
@@ -49,7 +53,7 @@ public class CartTest extends BaseTest {
         driver.get("https://www.demoblaze.com/cart.html");
         Thread.sleep(2000);
 
-        driver.findElement(By.xpath("//a[text()='Delete']")).click();
+        driver.findElement(By.xpath("//table[@id='cartTable']//a[contains(text(),'Delete')]")).click();
         Thread.sleep(3000);
 
         boolean productStillVisible = driver.findElements(By.xpath("//td[text()='Samsung galaxy s6']")).size() > 0;

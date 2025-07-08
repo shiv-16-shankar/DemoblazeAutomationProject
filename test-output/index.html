@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">25 methods, 2 failed,   23 passed</span>
+                    <span class="method-stats">25 methods, 3 failed,   22 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -109,6 +109,11 @@
                       <span>
                         <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Demoblaze_Automation_Suite" title="tests.CartTest" class="method navigator-link" hash-for-method="removeProductFromCart">removeProductFromCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Demoblaze_Automation_Suite" title="tests.CartTest" class="method navigator-link" hash-for-method="viewCartWithAddedProducts">viewCartWithAddedProducts</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Demoblaze_Automation_Suite -->
@@ -227,11 +232,6 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Demoblaze_Automation_Suite" title="tests.CartTest" class="method navigator-link" hash-for-method="viewCartWithAddedProducts">viewCartWithAddedProducts</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Demoblaze_Automation_Suite" title="tests.ProductBrowsingTest" class="method navigator-link" hash-for-method="viewProductDetails">viewProductDetails</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -258,10 +258,60 @@
                   <a name="removeProductFromCart">
                   </a> <!-- removeProductFromCart -->
                   <span class="method-name">removeProductFromCart</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [false] but found [true]
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//table[@id=&apos;cartTable&apos;]//a[contains(text(),&apos;Delete&apos;)]&quot;}
+  (Session info: chrome=137.0.7151.120)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [efbc5f5bd17dbcf2bd9dbfea1eea931c, findElement {using=xpath, value=//table[@id=&apos;cartTable&apos;]//a[contains(text(),&apos;Delete&apos;)]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.120, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\Sathya\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58598}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58598/devtoo..., se:cdpVersion: 137.0.7151.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: efbc5f5bd17dbcf2bd9dbfea1eea931c
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
 	at tests.CartTest.removeProductFromCart(CartTest.java:56)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 29 stack frames
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="viewCartWithAddedProducts">
+                  </a> <!-- viewCartWithAddedProducts -->
+                  <span class="method-name">viewCartWithAddedProducts</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[text()=&apos;Samsung galaxy s6&apos;]&quot;}
+  (Session info: chrome=137.0.7151.120)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [286744c1d91ebc2088847dc648ff4616, findElement {using=xpath, value=//a[text()=&apos;Samsung galaxy s6&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.120, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\Sathya\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58581}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58581/devtoo..., se:cdpVersion: 137.0.7151.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 286744c1d91ebc2088847dc648ff4616
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at tests.CartTest.viewCartWithAddedProducts(CartTest.java:37)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -279,13 +329,13 @@
                   </a> <!-- placeOrderWithEmptyForm -->
                   <span class="method-name">placeOrderWithEmptyForm</span>
                   <div class="stack-trace">org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Please fill out Name and Creditcard.}
-  (Session info: chrome=136.0.7103.93): Please fill out Name and Creditcard.
+  (Session info: chrome=137.0.7151.120): Please fill out Name and Creditcard.
 Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [04505c5f56430680ee7ec31e7eb505a4, findElements {value=orderModalLabel, using=id}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.93, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: C:\Users\Sathya\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55004}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55004/devtoo..., se:cdpVersion: 136.0.7103.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 04505c5f56430680ee7ec31e7eb505a4
+Command: [8f99f3480e334dbbf76907f57dd38a5b, findElements {using=id, value=orderModalLabel}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.120, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\Sathya\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58701}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58701/devtoo..., se:cdpVersion: 137.0.7151.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8f99f3480e334dbbf76907f57dd38a5b
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:136)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
@@ -350,6 +400,35 @@ Session ID: 04505c5f56430680ee7ec31e7eb505a4
           <div class="suite-Demoblaze_Automation_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
+              <span class="class-name">tests.SignupTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="signUpWithEmptyFields">
+                  </a> <!-- signUpWithEmptyFields -->
+                  <span class="method-name">signUpWithEmptyFields</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="signUpWithExistingUsername">
+                  </a> <!-- signUpWithExistingUsername -->
+                  <span class="method-name">signUpWithExistingUsername</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="signUpWithUniqueCredentials">
+                  </a> <!-- signUpWithUniqueCredentials -->
+                  <span class="method-name">signUpWithUniqueCredentials</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Demoblaze_Automation_Suite-class-passed -->
+          <div class="suite-Demoblaze_Automation_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
               <span class="class-name">tests.UIUXTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -379,35 +458,6 @@ Session ID: 04505c5f56430680ee7ec31e7eb505a4
                   <a name="verifyProductTileAlignment">
                   </a> <!-- verifyProductTileAlignment -->
                   <span class="method-name">verifyProductTileAlignment</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Demoblaze_Automation_Suite-class-passed -->
-          <div class="suite-Demoblaze_Automation_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">tests.SignupTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="signUpWithEmptyFields">
-                  </a> <!-- signUpWithEmptyFields -->
-                  <span class="method-name">signUpWithEmptyFields</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="signUpWithExistingUsername">
-                  </a> <!-- signUpWithExistingUsername -->
-                  <span class="method-name">signUpWithExistingUsername</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="signUpWithUniqueCredentials">
-                  </a> <!-- signUpWithUniqueCredentials -->
-                  <span class="method-name">signUpWithUniqueCredentials</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -466,13 +516,6 @@ Session ID: 04505c5f56430680ee7ec31e7eb505a4
                   <a name="addProductToCart">
                   </a> <!-- addProductToCart -->
                   <span class="method-name">addProductToCart</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="viewCartWithAddedProducts">
-                  </a> <!-- viewCartWithAddedProducts -->
-                  <span class="method-name">viewCartWithAddedProducts</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -592,103 +635,103 @@ data.addRows(25);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'verifyOrderConfirmationPopup')
 data.setCell(0, 2, 'tests.OrderTest')
-data.setCell(0, 3, 25913);
+data.setCell(0, 3, 26043);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'addMultipleProductsToCart')
-data.setCell(1, 2, 'tests.CartTest')
-data.setCell(1, 3, 25666);
+data.setCell(1, 1, 'placeOrderWithValidDetails')
+data.setCell(1, 2, 'tests.OrderTest')
+data.setCell(1, 3, 25686);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'placeOrderWithEmptyForm')
-data.setCell(2, 2, 'tests.OrderTest')
-data.setCell(2, 3, 25459);
+data.setCell(2, 1, 'addMultipleProductsToCart')
+data.setCell(2, 2, 'tests.CartTest')
+data.setCell(2, 3, 24591);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'placeOrderWithValidDetails')
+data.setCell(3, 1, 'placeOrderWithEmptyForm')
 data.setCell(3, 2, 'tests.OrderTest')
-data.setCell(3, 3, 24699);
+data.setCell(3, 3, 22983);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'addProductToCart')
 data.setCell(4, 2, 'tests.CartTest')
-data.setCell(4, 3, 14215);
+data.setCell(4, 3, 16558);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'navigateUsingNavbarLinks')
 data.setCell(5, 2, 'tests.ProductBrowsingTest')
-data.setCell(5, 3, 13917);
+data.setCell(5, 3, 12100);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'verifyLogoutAfterLogin')
 data.setCell(6, 2, 'tests.LogoutTest')
-data.setCell(6, 3, 12207);
+data.setCell(6, 3, 12083);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'navigateToHomeFromNavbar')
-data.setCell(7, 2, 'tests.ProductBrowsingTest')
-data.setCell(7, 3, 9709);
+data.setCell(7, 1, 'loginWithValidCredentials')
+data.setCell(7, 2, 'tests.LoginTest')
+data.setCell(7, 3, 9065);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'loginWithValidCredentials')
+data.setCell(8, 1, 'loginWithEmptyFields')
 data.setCell(8, 2, 'tests.LoginTest')
-data.setCell(8, 3, 9529);
+data.setCell(8, 3, 8751);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'loginWithWrongPassword')
-data.setCell(9, 2, 'tests.LoginTest')
-data.setCell(9, 3, 9238);
+data.setCell(9, 1, 'signUpWithExistingUsername')
+data.setCell(9, 2, 'tests.SignupTest')
+data.setCell(9, 3, 8681);
 data.setCell(10, 0, 10)
 data.setCell(10, 1, 'testAlertPopupStyling')
 data.setCell(10, 2, 'tests.UIUXTest')
-data.setCell(10, 3, 8946);
+data.setCell(10, 3, 8549);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'loginWithEmptyFields')
+data.setCell(11, 1, 'loginWithWrongPassword')
 data.setCell(11, 2, 'tests.LoginTest')
-data.setCell(11, 3, 8545);
+data.setCell(11, 3, 8463);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'loginWithInvalidEmailFormat')
-data.setCell(12, 2, 'tests.LoginTest')
-data.setCell(12, 3, 8342);
+data.setCell(12, 1, 'signUpWithUniqueCredentials')
+data.setCell(12, 2, 'tests.SignupTest')
+data.setCell(12, 3, 8419);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'signUpWithUniqueCredentials')
+data.setCell(13, 1, 'signUpWithEmptyFields')
 data.setCell(13, 2, 'tests.SignupTest')
-data.setCell(13, 3, 8071);
+data.setCell(13, 3, 8206);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'signUpWithExistingUsername')
-data.setCell(14, 2, 'tests.SignupTest')
-data.setCell(14, 3, 8070);
+data.setCell(14, 1, 'loginWithInvalidEmailFormat')
+data.setCell(14, 2, 'tests.LoginTest')
+data.setCell(14, 3, 7811);
 data.setCell(15, 0, 15)
-data.setCell(15, 1, 'signUpWithEmptyFields')
-data.setCell(15, 2, 'tests.SignupTest')
-data.setCell(15, 3, 7752);
+data.setCell(15, 1, 'verifyNoHorizontalScroll')
+data.setCell(15, 2, 'tests.ResponsiveDesignTest')
+data.setCell(15, 3, 7736);
 data.setCell(16, 0, 16)
-data.setCell(16, 1, 'removeProductFromCart')
-data.setCell(16, 2, 'tests.CartTest')
-data.setCell(16, 3, 6811);
+data.setCell(16, 1, 'verifyPasswordIsMasked')
+data.setCell(16, 2, 'tests.LoginTest')
+data.setCell(16, 3, 6448);
 data.setCell(17, 0, 17)
-data.setCell(17, 1, 'viewProductDetails')
+data.setCell(17, 1, 'navigateToHomeFromNavbar')
 data.setCell(17, 2, 'tests.ProductBrowsingTest')
-data.setCell(17, 3, 6588);
+data.setCell(17, 3, 6178);
 data.setCell(18, 0, 18)
-data.setCell(18, 1, 'verifyNoHorizontalScroll')
-data.setCell(18, 2, 'tests.ResponsiveDesignTest')
-data.setCell(18, 3, 6003);
+data.setCell(18, 1, 'viewProductDetails')
+data.setCell(18, 2, 'tests.ProductBrowsingTest')
+data.setCell(18, 3, 6108);
 data.setCell(19, 0, 19)
 data.setCell(19, 1, 'browsePhonesCategory')
 data.setCell(19, 2, 'tests.ProductBrowsingTest')
-data.setCell(19, 3, 5935);
+data.setCell(19, 3, 4819);
 data.setCell(20, 0, 20)
-data.setCell(20, 1, 'verifyPasswordIsMasked')
-data.setCell(20, 2, 'tests.LoginTest')
-data.setCell(20, 3, 5850);
+data.setCell(20, 1, 'verifyProductTileAlignment')
+data.setCell(20, 2, 'tests.UIUXTest')
+data.setCell(20, 3, 3536);
 data.setCell(21, 0, 21)
-data.setCell(21, 1, 'checkFontConsistency')
-data.setCell(21, 2, 'tests.UIUXTest')
-data.setCell(21, 3, 3842);
+data.setCell(21, 1, 'removeProductFromCart')
+data.setCell(21, 2, 'tests.CartTest')
+data.setCell(21, 3, 3507);
 data.setCell(22, 0, 22)
 data.setCell(22, 1, 'checkVisibilityOfActionButtons')
 data.setCell(22, 2, 'tests.UIUXTest')
-data.setCell(22, 3, 3803);
+data.setCell(22, 3, 3485);
 data.setCell(23, 0, 23)
-data.setCell(23, 1, 'verifyProductTileAlignment')
+data.setCell(23, 1, 'checkFontConsistency')
 data.setCell(23, 2, 'tests.UIUXTest')
-data.setCell(23, 3, 3628);
+data.setCell(23, 3, 3316);
 data.setCell(24, 0, 24)
 data.setCell(24, 1, 'viewCartWithAddedProducts')
 data.setCell(24, 2, 'tests.CartTest')
-data.setCell(24, 3, 3580);
+data.setCell(24, 3, 101);
 window.suiteTableData['Demoblaze_Automation_Suite']= { tableData: data, tableDiv: 'times-div-Demoblaze_Automation_Suite'}
 return data;
 }
@@ -789,335 +832,337 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">725 ms</span>
+                <span class="method-start">576 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginWithValidCredentials</span>
-                <span class="method-start">5440 ms</span>
+                <span class="method-start">7565 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=loginWithValidCredentials status=SUCCESS method=LoginTest.loginWithValidCredentials...)</span>
-                <span class="method-start">14969 ms</span>
+                <span class="method-start">16643 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">15375 ms</span>
+                <span class="method-start">17180 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginWithWrongPassword</span>
-                <span class="method-start">17450 ms</span>
+                <span class="method-start">19570 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=loginWithWrongPassword status=SUCCESS method=LoginTest.loginWithWrongPassword()[pri...)</span>
-                <span class="method-start">26688 ms</span>
+                <span class="method-start">28055 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">27074 ms</span>
+                <span class="method-start">28537 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginWithEmptyFields</span>
-                <span class="method-start">29121 ms</span>
+                <span class="method-start">30811 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=loginWithEmptyFields status=SUCCESS method=LoginTest.loginWithEmptyFields()[pri:3, ...)</span>
-                <span class="method-start">37666 ms</span>
+                <span class="method-start">39576 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">38214 ms</span>
+                <span class="method-start">40239 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginWithInvalidEmailFormat</span>
-                <span class="method-start">40237 ms</span>
+                <span class="method-start">42414 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=loginWithInvalidEmailFormat status=SUCCESS method=LoginTest.loginWithInvalidEmailFo...)</span>
-                <span class="method-start">48586 ms</span>
+                <span class="method-start">50228 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">48948 ms</span>
+                <span class="method-start">50754 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyPasswordIsMasked</span>
-                <span class="method-start">50887 ms</span>
+                <span class="method-start">52756 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=verifyPasswordIsMasked status=SUCCESS method=LoginTest.verifyPasswordIsMasked()[pri...)</span>
-                <span class="method-start">56737 ms</span>
+                <span class="method-start">59207 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.SignupTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">57109 ms</span>
+                <span class="method-start">59705 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">signUpWithUniqueCredentials</span>
-                <span class="method-start">58934 ms</span>
+                <span class="method-start">61753 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=signUpWithUniqueCredentials status=SUCCESS method=SignupTest.signUpWithUniqueCreden...)</span>
-                <span class="method-start">67008 ms</span>
+                <span class="method-start">70172 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">67381 ms</span>
+                <span class="method-start">70586 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">signUpWithExistingUsername</span>
-                <span class="method-start">69231 ms</span>
+                <span class="method-start">72575 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=signUpWithExistingUsername status=SUCCESS method=SignupTest.signUpWithExistingUsern...)</span>
-                <span class="method-start">77312 ms</span>
+                <span class="method-start">81264 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">77672 ms</span>
+                <span class="method-start">81735 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">signUpWithEmptyFields</span>
-                <span class="method-start">79623 ms</span>
+                <span class="method-start">83788 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=signUpWithEmptyFields status=SUCCESS method=SignupTest.signUpWithEmptyFields()[pri:...)</span>
-                <span class="method-start">87386 ms</span>
+                <span class="method-start">92000 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.CartTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">87796 ms</span>
+                <span class="method-start">92462 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">addProductToCart</span>
-                <span class="method-start">89890 ms</span>
+                <span class="method-start">94533 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=addProductToCart status=SUCCESS method=CartTest.addProductToCart()[pri:1, instance:...)</span>
-                <span class="method-start">104109 ms</span>
+                <span class="method-start">111093 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">104496 ms</span>
+                <span class="method-start">111530 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">viewCartWithAddedProducts</span>
-                <span class="method-start">106400 ms</span>
+                <span class="method-start">114473 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=viewCartWithAddedProducts status=SUCCESS method=CartTest.viewCartWithAddedProducts(...)</span>
-                <span class="method-start">109984 ms</span>
+                <span class="method-name">tearDown([TestResult name=viewCartWithAddedProducts status=FAILURE method=CartTest.viewCartWithAddedProducts(...)</span>
+                <span class="method-start">114589 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">110316 ms</span>
+                <span class="method-start">115282 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">removeProductFromCart</span>
-                <span class="method-start">112102 ms</span>
+                <span class="method-start">117322 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=removeProductFromCart status=FAILURE method=CartTest.removeProductFromCart()[pri:3,...)</span>
-                <span class="method-start">118925 ms</span>
+                <span class="method-start">120833 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">119569 ms</span>
+                <span class="method-start">121447 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">addMultipleProductsToCart</span>
-                <span class="method-start">121375 ms</span>
+                <span class="method-start">123517 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=addMultipleProductsToCart status=SUCCESS method=CartTest.addMultipleProductsToCart(...)</span>
-                <span class="method-start">147041 ms</span>
+                <span class="method-start">148108 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.OrderTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">147431 ms</span>
+                <span class="method-start">148541 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">placeOrderWithValidDetails</span>
-                <span class="method-start">149271 ms</span>
+                <span class="method-start">151073 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=placeOrderWithValidDetails status=SUCCESS method=OrderTest.placeOrderWithValidDetai...)</span>
-                <span class="method-start">173970 ms</span>
+                <span class="method-start">176759 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">174346 ms</span>
+                <span class="method-start">177221 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">placeOrderWithEmptyForm</span>
-                <span class="method-start">176072 ms</span>
+                <span class="method-start">179221 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=placeOrderWithEmptyForm status=FAILURE method=OrderTest.placeOrderWithEmptyForm()[p...)</span>
-                <span class="method-start">201545 ms</span>
+                <span class="method-start">202217 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">202193 ms</span>
+                <span class="method-start">203017 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyOrderConfirmationPopup</span>
-                <span class="method-start">204214 ms</span>
+                <span class="method-start">205308 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=verifyOrderConfirmationPopup status=SUCCESS method=OrderTest.verifyOrderConfirmatio...)</span>
-                <span class="method-start">230127 ms</span>
+                <span class="method-start">231351 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.ProductBrowsingTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">230502 ms</span>
+                <span class="method-start">231835 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">browsePhonesCategory</span>
-                <span class="method-start">232432 ms</span>
+                <span class="method-start">233833 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=browsePhonesCategory status=SUCCESS method=ProductBrowsingTest.browsePhonesCategory...)</span>
-                <span class="method-start">238367 ms</span>
+                <span class="method-start">238653 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">238773 ms</span>
+                <span class="method-start">239135 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">viewProductDetails</span>
-                <span class="method-start">240520 ms</span>
+                <span class="method-start">241233 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=viewProductDetails status=SUCCESS method=ProductBrowsingTest.viewProductDetails()[p...)</span>
-                <span class="method-start">247108 ms</span>
+                <span class="method-start">247345 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">247639 ms</span>
+                <span class="method-start">247734 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">navigateToHomeFromNavbar</span>
-                <span class="method-start">249421 ms</span>
+                <span class="method-start">249438 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=navigateToHomeFromNavbar status=SUCCESS method=ProductBrowsingTest.navigateToHomeFr...)</span>
-                <span class="method-start">259132 ms</span>
+                <span class="method-start">255623 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">259528 ms</span>
+                <span class="method-start">255998 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">navigateUsingNavbarLinks</span>
-                <span class="method-start">261240 ms</span>
+                <span class="method-start">257679 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=navigateUsingNavbarLinks status=SUCCESS method=ProductBrowsingTest.navigateUsingNav...)</span>
-                <span class="method-start">275157 ms</span>
+                <span class="method-start">269780 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.LogoutTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">275579 ms</span>
+                <span class="method-start">270256 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyLogoutAfterLogin</span>
-                <span class="method-start">277293 ms</span>
+                <span class="method-start">272220 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=verifyLogoutAfterLogin status=SUCCESS method=LogoutTest.verifyLogoutAfterLogin()[pr...)</span>
-                <span class="method-start">289500 ms</span>
+                <span class="method-start">284303 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.UIUXTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">290067 ms</span>
+                <span class="method-start">284708 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyProductTileAlignment</span>
-                <span class="method-start">291928 ms</span>
+                <span class="method-start">286425 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=verifyProductTileAlignment status=SUCCESS method=UIUXTest.verifyProductTileAlignmen...)</span>
-                <span class="method-start">295556 ms</span>
+                <span class="method-start">289961 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">295848 ms</span>
+                <span class="method-start">290347 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">checkVisibilityOfActionButtons</span>
-                <span class="method-start">297617 ms</span>
+                <span class="method-start">292182 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=checkVisibilityOfActionButtons status=SUCCESS method=UIUXTest.checkVisibilityOfActi...)</span>
-                <span class="method-start">301420 ms</span>
+                <span class="method-start">295672 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">301745 ms</span>
+                <span class="method-start">296055 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">checkFontConsistency</span>
-                <span class="method-start">303433 ms</span>
+                <span class="method-start">297922 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=checkFontConsistency status=SUCCESS method=UIUXTest.checkFontConsistency()[pri:3, i...)</span>
-                <span class="method-start">307276 ms</span>
+                <span class="method-start">301239 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">307616 ms</span>
+                <span class="method-start">301609 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testAlertPopupStyling</span>
-                <span class="method-start">309374 ms</span>
+                <span class="method-start">303623 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=testAlertPopupStyling status=SUCCESS method=UIUXTest.testAlertPopupStyling()[pri:4,...)</span>
-                <span class="method-start">318325 ms</span>
+                <span class="method-start">312175 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.ResponsiveDesignTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">318699 ms</span>
+                <span class="method-start">312629 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyNoHorizontalScroll</span>
-                <span class="method-start">320570 ms</span>
+                <span class="method-start">314577 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=verifyNoHorizontalScroll status=SUCCESS method=ResponsiveDesignTest.verifyNoHorizon...)</span>
-                <span class="method-start">326574 ms</span>
+                <span class="method-start">322316 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">flushReport</span>
-                <span class="method-start">326979 ms</span>
+                <span class="method-start">322839 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
